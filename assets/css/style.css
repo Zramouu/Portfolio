@@ -513,165 +513,80 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# Portfolio 
 --------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(69, 80, 91, 0.1);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 50px;
-}
-
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .portfolio-item {
-  flex: 0 0 25%; 
-  max-width: 25%; 
-  padding: 15px;
+  background: #fff;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Removed hover effect from .portfolio-item */
 }
 
-.portfolio-wrap img {
-  width: 100%; 
-  height: auto; 
-  object-fit: cover;
-}
-.portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(69, 80, 91, 0.1);
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s; 
-  border-radius: 5px; 
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
 }
 
-.portfolio-info:hover {
-  transform: scale(1.05); 
-  box-shadow: 0px 10px 40px rgba(69, 80, 91, 0.15); 
-}
-
-
-.portfolio-info h4 {
-  margin: 0;
-  padding-top: 10px; 
-}
-
-.portfolio-info p {
-  text-align: center;
+/* Apply hover effect to img only */
+.portfolio-item img:hover {
+  transform: scale(1.03);
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# Portfolio Content
 --------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
+.portfolio-content {
+  padding: 1.5rem;
 }
 
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
+.portfolio-title {
+  font-size: 1.5rem;
+  margin-top: 0;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
+.portfolio-links {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #0563bb;
+.portfolio-links a {
+  text-decoration: none;
+  color: #007bff;
+  margin-right: 1rem;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0563bb;
+.portfolio-links a:hover {
+  text-decoration: underline;
 }
 
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
+.portfolio-description {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  color: #666;
 }
 
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+.portfolio-tech {
+  font-size: 0.85rem;
+  color: #555;
 }
 
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
+.portfolio-tools {
+  font-size: 0.85rem;
+  color: #555;
 }
 
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .portfolio-content {
+    padding: 1rem;
+  }
 }
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
-.portfolio-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.portfolio-item {
-  flex: 0 0 50%; 
-  max-width: 50%; 
-  padding: 15px; 
-}
-
-.portfolio-wrap img {
-  width: 300px; 
-  height: 300px;
-  object-fit: cover;
-}
-
-
 
 /*--------------------------------------------------------------
 # Contact
